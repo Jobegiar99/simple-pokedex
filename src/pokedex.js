@@ -11,7 +11,6 @@ class Pokedex extends React.Component{
 
         return(
             <div align = "center" className = "pokedexDiv">
-                <image src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTOXv1hI7gSjxW6MILa_WsOmOXVK4m8AF8BbjJnWgrhMm_HHVzi"></image>  
                 <br></br>
                 <br></br>
                 {pokemon}
