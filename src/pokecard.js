@@ -12,8 +12,9 @@ class Pokecard extends React.Component{
     render(){
         let url ="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${id}.png"
         let id = (this.props.id > 99 ) ? this.props.id.toString(): (this.props.id > 9 ) ? "0" + this.props.id.toString() : "00" + this.props.id.toString();
+        let serebii="https://www.serebii.net/pokedex-xy/{id}.shtml"
         url = url.replace("${id}",id );
-        //https://www.serebii.net/pokedex-xy/001.shtml
+        serebii = serebii.replace("{id}",id);
         
         return(
 
@@ -23,11 +24,14 @@ class Pokecard extends React.Component{
                    {id}
                </hi> 
                <br></br>
-               <img className = "pokemonImage"src={url} width = "50"/>
+               <a HREF = {serebii} target = "_blank">
+                    <img className = "pokemonImage"src={url} width = "50"/>
+                </a>
 
             </div>
         )
     }
+
 }
 
 export default Pokecard;

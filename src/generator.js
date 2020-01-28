@@ -1,9 +1,41 @@
 import React,{Component} from 'react';
+import Pokecard from './pokecard';
 
-let numbers = [];
+let dexTable = [];
+let pokemons = [];
+let pokemonNumber = 1;
+for (let i = 0; i < 134 ; i++){
+    let tempPokemon = []
+    for(let j = 0; j < 6; j++){
+        
+        tempPokemon.push(
+            <td>
+            <Pokecard
+                id = {pokemonNumber}
+            />
+            </td>
+        )
+        pokemonNumber++;
 
-for (let i = 0 ; i < 6; i++){
-    numbers.push( Math.floor(Math.random() * 807));
+    }
+    pokemons.push(tempPokemon);
 }
 
-export default numbers;
+
+for (let i = 0 ; i < 134 ; i++){
+
+    dexTable.push(
+        <table>
+            <tr>
+                {pokemons[i]}
+            </tr>
+            <tr>
+
+            </tr>
+        </table>
+    );
+
+}
+
+
+export default dexTable;

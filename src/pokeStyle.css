@@ -5,7 +5,11 @@
 
 .pokeCardDiv{
     font-size: '10px';
-    background-color: palevioletred;
+    background-color: gray;
+    width: 200px;
+    border-style: groove;
+    border-width: 10px;
+    border-color: white;
 }
 
 .pokemonImage{
@@ -13,9 +17,8 @@
     height: 200px;
 }
 
-.pokedexH1{
-    font-family: fantasy;
-    font-size: xx-large;
-    color: blue;
+.pokedexDiv{
 
+  background-image: url("http://www.hdfondos.eu/preview/get_photo/641921/2560/1600");
+  
 }
