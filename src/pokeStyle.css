@@ -1,0 +1,21 @@
+.pokedexTable{
+    width: auto;
+    height: auto;
+}
+
+.pokeCardDiv{
+    font-size: '10px';
+    background-color: palevioletred;
+}
+
+.pokemonImage{
+    width: 200px;
+    height: 200px;
+}
+
+.pokedexH1{
+    font-family: fantasy;
+    font-size: xx-large;
+    color: blue;
+
+}
