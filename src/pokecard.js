@@ -2,12 +2,6 @@ import React,{Component} from 'react';
 import "./pokeStyle.css";
 
 class Pokecard extends React.Component{
-    static defaultProps = {
-        id : 1,
-        name : "Bulbasaur",
-        type : "grass",
-        xp : 0
-    }
 
     render(){
         let url ="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${id}.png"
