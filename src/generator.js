@@ -1,7 +1,6 @@
 import React,{Component} from 'react';
 import Pokecard from './pokecard';
 
-let dexTable = [];
 let pokemons = [];
 let pokemonNumber = 1;
 for (let i = 0; i < 134 ; i++){
@@ -22,20 +21,13 @@ for (let i = 0; i < 134 ; i++){
 }
 
 
-for (let i = 0 ; i < 134 ; i++){
-
-    dexTable.push(
-        <table>
-            <tr>
-                {pokemons[i]}
-            </tr>
-            <tr>
-
-            </tr>
-        </table>
-    );
-
-}
+let dexTable = pokemons.map( (pokemon) => (
+    <table>
+        <tr>
+            {pokemon}
+        </tr>
+    </table>
+));
 
 
 export default dexTable;
